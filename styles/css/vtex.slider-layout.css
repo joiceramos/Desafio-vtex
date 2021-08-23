@@ -1,0 +1,10 @@
+
+.slideChildrenContainer--carousel {
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginationDot--isActive {
+    background-color: rgb(0, 223, 0);
+}

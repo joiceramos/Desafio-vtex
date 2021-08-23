@@ -1,0 +1,226 @@
+{
+  "store.home": { 
+    "blocks": [
+      "slider-layout#tab-menu"      
+    ]
+  },
+  "slider-layout#tab-menu":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "phone": 1,
+        "tablet": 1
+      },
+      "blockClass": "flex-tabLayout"
+    },
+    "children":[
+      "tab-layout#tab-menu"
+    ]
+  },
+  "tab-layout#tab-menu": {
+      "children": ["tab-list#menu", "flex-layout.row#banner", "tab-content#menu"]
+  },
+  "tab-list#menu": {
+    "children": [
+      "tab-list.item#promotion", 
+      "tab-list.item#corinthians", 
+      "tab-list.item#palmeiras", 
+      "tab-list.item#signos", 
+      "tab-list.item#divertidos", 
+      "tab-list.item#7maravilhas",
+      "tab-list.item#guerreiros"
+    ]
+  },
+  "tab-list.item#promotion": {
+    "props": {
+      "tabId": "promotion",
+      "label": "Promoção",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#corinthians": {
+    "props": {
+      "label": "corinthians",
+      "tabId": "corinthians",
+      "blockClass": "button-itemMenu"
+    }
+  },
+  "tab-list.item#palmeiras": {
+    "props": {
+      "label": "palmeiras",
+      "tabId": "palmeiras",
+      "blockClass": "button-itemMenu"
+    }
+  }, 
+  "tab-list.item#signos": {
+    "props": {
+      "label": "signos",
+      "tabId": "signos",
+      "blockClass": "button-itemMenu"
+    }
+  }, 
+  "tab-list.item#divertidos": {
+    "props": {
+      "label": "divertidos",
+      "tabId": "divertidos"
+    }
+  }, 
+  "tab-list.item#7maravilhas": {
+    "props": {
+      "label": "7 maravilhas",
+      "tabId": "7maravilhas"
+    }
+  },
+  "tab-list.item#guerreiros": {
+    "props": {
+      "label": "guerreiros",
+      "tabId": "guerreiros"
+    }
+  },
+  
+  "tab-content#menu": {
+    "children": [
+      "tab-content.item#promotion", 
+      "tab-content.item#corinthians",
+      "tab-content.item#palmeiras",
+      "tab-content.item#signos",
+      "tab-content.item#divertidos",
+      "tab-content.item#7maravilhas",
+      "tab-content.item#guerreiros"
+    ]
+  },
+  "tab-content.item#promotion": {
+    "children": ["rich-text#promotion"],
+    "props": {
+        "tabId": "promotion"
+    }
+  },
+  "tab-content.item#corinthians": {
+    "children": ["rich-text#corinthians"],
+    "props": {
+        "tabId": "corinthians"
+    }
+  },
+  "tab-content.item#palmeiras":{
+    "children": ["rich-text#palmeiras"],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  }, 
+  "tab-content.item#signos": {
+    "children": ["rich-text#signos"],
+    "props": {
+      "tabId": "signos"
+    }
+  }, 
+  "tab-content.item#divertidos": {
+    "children": ["rich-text#divertidos"],
+    "props": {
+      "tabId": "divertidos"
+    }
+  }, 
+  "tab-content.item#7maravilhas": {
+    "children": ["rich-text#7maravilhas"],
+    "props": {
+      "tabId": "7maravilhas"
+    }
+  },
+  "tab-content.item#guerreiros": {
+    "children": ["rich-text#guerreiros"],
+    "props": {
+      "tabId": "guerreiros"
+    }
+  },
+  "rich-text#promotion": {
+    "props": {
+        "text": "Área da promoção",
+        "textPosition": "CENTER",
+        "font": "t-heading-3"
+    },
+    "children": [
+      "product-list"
+    ]
+  },
+  "rich-text#corinthians": {
+    "props": {
+        "text": "Área do corinthians",
+        "textPosition": "CENTER",
+        "font": "t-heading-3"
+    }
+  },
+  "rich-text#palmeiras":{
+    "props": {
+      "text": "Área do palmeiras",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  }, 
+  "rich-text#signos": {
+    "props": {
+      "text": "Área de signos",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  }, 
+  "rich-text#divertidos": {
+    "props": {
+      "text": "Área dos divertidos",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  }, 
+  "rich-text#7maravilhas": {
+    "props": {
+      "text": "Área das 7maravilhas",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#guerreiros": {
+    "props": {
+      "text": "Área dos guerreiros",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "flex-layout.row#banner": {
+    "props": {
+      "blockClass": "flex-banner"
+    },
+    "children": [
+      "slider-layout#menu"
+    ]
+  },
+  "slider-layout#menu": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "false",
+      "blockClass": "carousel",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+    }
+    },
+    "children": ["image#banner1", "image#banner2"]
+  },
+
+  "image#banner1": {
+    "props": {
+      "src": "assets/BANNER-WOOD.png",
+      "horizontalAlign": "center",
+      "colSizing": "auto",
+      "blockClass": "imgcarousel"
+    }
+  },
+  "image#banner2": {
+    "props": {
+      "src": "assets/BANNER-WOOD2.png",
+      "blockClass": "imgcarousel"
+    }
+  }
+}

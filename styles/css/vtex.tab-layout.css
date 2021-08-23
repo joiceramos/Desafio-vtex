@@ -1,0 +1,44 @@
+
+.listContainer {
+    background: #212121;
+    box-shadow: 5px 0 10px #111111;
+}
+.listItem{
+    background-color: transparent;
+    color: #FFF;
+}
+
+.listItem--button-itemMenu {
+    background-color: transparent;
+    color: #FFF;
+}
+
+.listItemActive {
+    border-bottom: 2px solid rgb(0, 223, 0);
+    color: #00df00 !important;
+}
+
+.listItemActive--button-itemMenu {
+    background-color: transparent;
+    color: #0c389f;
+}
+/* 
+.background {
+    color: #303030;
+    color: #03044e;
+    color: #0F3E99;
+    color: #eef3f7;
+    color: #f71963;
+    color: #f2f4f5;
+    color: #8bc34a;
+    color: #eafce3;
+    color: #ff4c4c;
+    color: #ffe6e6;
+    color: #ffb100;
+    color: #fff6e0;
+    color: #727273;
+    color: #979899;
+    color: #cacbcc;
+    color: #e3e4e6;
+    color: #f2f4f5
+} */
